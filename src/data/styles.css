@@ -1,0 +1,62 @@
+toolbaritem {
+    white-space: nowrap;
+}
+
+toolbarbutton {
+    width: 28px;
+    margin: 0;
+    padding: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    cursor: pointer;
+
+}
+
+separator {
+    width: 5px;
+    background: red;
+}
+
+#audio-controls {
+    
+}
+
+:-moz-any(#prev-button, #play-button, #next-button) {
+  list-style-image: url("btn_player_controls@2x.png");
+}
+
+:-moz-any(#prev-button, #play-button, #next-button) > .toolbarbutton-icon {
+  width: 18px;
+}
+
+#prev-button {
+  -moz-image-region: rect(0, 36px, 36px, 0);
+}
+
+#prev-button:hover {
+  -moz-image-region: rect(36px, 36px, 72px, 0);
+}
+
+#play-button {
+  -moz-image-region: rect(0, 72px, 36px, 36px);
+}
+
+#play-button:hover {
+  -moz-image-region: rect(36px, 72px, 72px, 36px);
+}
+
+#play-button.playing {
+  -moz-image-region: rect(0, 108px, 36px, 72px);
+}
+
+#play-button.playing:hover {
+  -moz-image-region: rect(36px, 108px, 72px, 72px);
+}
+
+#next-button {
+  -moz-image-region: rect(0, 144px, 36px, 108px);
+}
+
+#next-button:hover {
+  -moz-image-region: rect(36px, 144px, 72px, 108px);
+}
